@@ -22,7 +22,7 @@ stages:
     steps:
     - task: Docker@2
       inputs:
-        containerRegistry: 'manidockerhub'
+        containerRegistry: 'dockerconnection'
         repository: 'manikrish/weatherapi'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
