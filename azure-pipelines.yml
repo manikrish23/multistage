@@ -25,6 +25,3 @@ stages:
         containerRegistry: 'dockerconnection'
         repository: 'manikrish/weatherapi'
         command: 'buildAndPush'
-        Dockerfile: '**/Dockerfile'
-        tags: |
-          $(tag)
