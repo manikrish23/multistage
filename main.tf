@@ -1,15 +1,8 @@
-terraform {
-  required_providers {
-    azurerm = {
-      source  = "hashicorp/azurerm"
-      version = "=2.46.0"
-      skip_provider_registration = true
-    }
-  }
-}
 provider "azurerm" {
-  features {}
+    version = "2.5.0"
+    features {}
 }
+
 terraform {
     backend "azurerm" {
         resource_group_name  = "tfmainrg"
