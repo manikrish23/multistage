@@ -21,8 +21,8 @@ variable "imagebuild" {
 # Configure the Microsoft Azure Provider
  
 resource "azurerm_resource_group" "tf_test" {
-    name = "tfmainrg"
-    location = "Australia East"
+  name = "testrgtf"
+  location = "Australia east"
 }
 resource "azurerm_container_group" "tfcg_test" {
   name                      = "weatherapi"
